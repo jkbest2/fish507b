@@ -39,6 +39,25 @@
   series = {Models in {{Fisheries Research}}: {{GLMs}}, {{GAMS}} and {{GLMMs}}}
 }
 
+@article{CecconiEtAl2016a,
+  title = {Preferential Sampling and {{Bayesian}} Geostatistics: {{Statistical}} Modeling and Examples},
+  shorttitle = {Preferential Sampling and {{Bayesian}} Geostatistics},
+  author = {Cecconi, Lorenzo and Grisotto, Laura and Catelan, Dolores and Lagazio, Corrado and Berrocal, Veronica and Biggeri, Annibale},
+  year = {2016},
+  month = aug,
+  volume = {25},
+  pages = {1224--1243},
+  publisher = {{SAGE Publications Ltd STM}},
+  issn = {0962-2802},
+  doi = {10/f836bf},
+  abstract = {Preferential sampling refers to any situation in which the spatial process and the sampling locations are not stochastically independent. In this paper, we present two examples of geostatistical analysis in which the usual assumption of stochastic independence between the point process and the measurement process is violated. To account for preferential sampling, we specify a flexible and general Bayesian geostatistical model that includes a shared spatial random component. We apply the proposed model to two different case studies that allow us to highlight three different modeling and inferential aspects of geostatistical modeling under preferential sampling: (1) continuous or finite spatial sampling frame; (2) underlying causal model and relevant covariates; and (3) inferential goals related to mean prediction surface or prediction uncertainty.},
+  file = {../../Dropbox/literature/CecconiEtAl2016a.pdf},
+  journal = {Stat Methods Med Res},
+  keywords = {Bayesian geostatistics,Preferential sampling,shared component model},
+  language = {en},
+  number = {4}
+}
+
 @article{Conn2017,
   title = {Confronting Preferential Sampling When Analysing Population Distributions: Diagnosis and Model-Based Triage},
   author = {Conn, Paul B. and Thorson, James T. and Johnson, Devin S.},
@@ -121,6 +140,17 @@
 % == BibTeX quality report for Diggle2010:
 % ? Possibly abbreviated journal title J. Royal Stat. Soc. B
 
+@phdthesis{Dinsdale2018,
+  title = {Methods for Preferential Sampling in Geostatistics},
+  author = {Dinsdale, Daniel},
+  year = {2018},
+  doi = {10.14288/1.0372359},
+  abstract = {Preferential sampling in geostatistics occurs when the locations at which observations are made may depend on the spatial process that underlines the correlation structure of the measurements. If ignored, this may affect the parameter estimates of the model and the resulting spatial predictions. In this thesis, we first show that previously proposed Monte Carlo estimates for the likelihood function may not be approximating the desired function. Furthermore, we argue that for preferential sampling of moderate complexity, alternative and widely available numerical methods to approximate the likelihood function produce better results than Monte Carlo methods. We illustrate our findings on various data sets, include the biomonitoring Galicia dataset analysed previously in the literature.  Research on preferential sampling has so far been restricted to stationary sampling locations such as monitoring sites. In this thesis, we also expand the methodology for applicability in cases where the sensors are moving through the domain of interest. More specifically, we propose a flexible framework for inference on preferentially sampled fields, where the process that generates the sampling locations is stochastic and moving through a 2-dimensional space. The main application of these methods is the sampling of ocean temperature fields by marine mammal mounted sensors. This is an area of research which has grown drastically over the past 25 years and is providing scientists with a wealth of new oceanographic information in areas of our oceans previously not well understood.  We show that standard geostatistical models may not be reliable for this type of data, due to the possibility that the regions visited by the animals may depend on the ocean temperatures, hence resulting in a type of preferential sampling. Our simulation studies confirm that predictions obtained from the preferential sampling model are more reliable when this phenomenon is present, and they compare very well to the standard ones when there is no preferential sampling. We apply our methods to sea surface temperature data collected by Southern elephant seals in the Southern Indian ocean and show how predictions of sea surface temperature fields using this data may vary when accounting for the preferential movement.},
+  file = {../../Dropbox/literature/Dinsdale2018.pdf},
+  language = {eng},
+  school = {University of British Columbia}
+}
+
 @article{DinsdaleSalibian-Barrera2019,
   title = {Modelling Ocean Temperatures from Bio-Probes under Preferential Sampling},
   author = {Dinsdale, Daniel and {Salibian-Barrera}, Matias},
@@ -155,6 +185,22 @@
 }
 % == BibTeX quality report for DinsdaleSalibian-Barrera2019a:
 % ? Possibly abbreviated journal title J. Royal Stat. Soc. B
+
+@article{Ferreira2020,
+  title = {Geostatistics under Preferential Sampling in the Presence of Local Repulsion Effects},
+  author = {Ferreira, Gustavo da Silva},
+  year = {2020},
+  month = sep,
+  volume = {27},
+  pages = {549--570},
+  issn = {1573-3009},
+  doi = {10/ghtkp6},
+  abstract = {This paper presents an extension of the Geostatistical model under preferential sampling in order to accommodate possible local repulsion effects. This local repulsion can be caused by the researcher in charge of collecting data who, after observing the stochastic process of interest in a specific location, avoids collecting new samples near this place. Proceeding in this way, the resulting sampling design would in practice include a repulsion window centered on each sampling location, even though the researcher was planning the sample preferentially. This perturbation in the Geostatistical model under preferential sampling can be modeled through a discrete nonhomogeneous stochastic process over a partition composed of M subregions of the study area, where only one sample lies in each subregion. Simulations and an application to real data are performed under the Bayesian approach and the effects of this perturbation on estimation and prediction are then discussed. The results obtained corroborate the idea that the proposed methodology corrects the distortions caused by this perturbation, thus mitigating the effects on inference and spatial prediction.},
+  file = {../../Dropbox/literature/Ferreira2020.pdf},
+  journal = {Environ Ecol Stat},
+  language = {en},
+  number = {3}
+}
 
 @misc{FisherySim,
   title = {{{FisherySim}}.Jl},
@@ -228,6 +274,26 @@
   language = {en}
 }
 
+@article{KarcherEtAl2016a,
+  title = {Quantifying and {{Mitigating}} the {{Effect}} of {{Preferential Sampling}} on {{Phylodynamic Inference}}},
+  author = {Karcher, Michael D. and Palacios, Julia A. and Bedford, Trevor and Suchard, Marc A. and Minin, Vladimir N.},
+  year = {2016},
+  month = mar,
+  volume = {12},
+  pages = {e1004789},
+  publisher = {{Public Library of Science}},
+  issn = {1553-7358},
+  doi = {10/f8vkdg},
+  abstract = {Phylodynamics seeks to estimate effective population size fluctuations from molecular sequences of individuals sampled from a population of interest. One way to accomplish this task formulates an observed sequence data likelihood exploiting a coalescent model for the sampled individuals' genealogy and then integrating over all possible genealogies via Monte Carlo or, less efficiently, by conditioning on one genealogy estimated from the sequence data. However, when analyzing sequences sampled serially through time, current methods implicitly assume either that sampling times are fixed deterministically by the data collection protocol or that their distribution does not depend on the size of the population. Through simulation, we first show that, when sampling times do probabilistically depend on effective population size, estimation methods may be systematically biased. To correct for this deficiency, we propose a new model that explicitly accounts for preferential sampling by modeling the sampling times as an inhomogeneous Poisson process dependent on effective population size. We demonstrate that in the presence of preferential sampling our new model not only reduces bias, but also improves estimation precision. Finally, we compare the performance of the currently used phylodynamic methods with our proposed model through clinically-relevant, seasonal human influenza examples.},
+  file = {../../Dropbox/literature/KarcherEtAl2016a.pdf},
+  journal = {PLOS Computational Biology},
+  keywords = {Effective population size,Infectious disease epidemiology,Influenza,Monte Carlo method,Population dynamics,Population genetics,Population size,Simulation and modeling},
+  language = {en},
+  number = {3}
+}
+% == BibTeX quality report for KarcherEtAl2016a:
+% ? Title looks like it was stored in title-case in Zotero
+
 @article{KotwickiOno2019,
   ids = {KotwickiOno,KotwickiOno2019a},
   title = {The Effect of Random and Density-Dependent Variation in Sampling Efficiency on Variance of Abundance Estimates from Fishery Surveys},
@@ -285,6 +351,40 @@
   language = {en}
 }
 
+@inproceedings{Menezes2009,
+  title = {Clustering and Preferential Sampling, Two Distinct Issues in {{Geostatistics}}},
+  booktitle = {{{XVII Annual Congress}} of the {{Portuguese Society}} of {{Statistics}}},
+  author = {Menezes, Raquel},
+  year = {2009},
+  pages = {6},
+  abstract = {This work aims to overview two issues of sampling design, clustering and preferability, within the scope of geostatistics, area concerned with fitting spatially continuous models to spatially discrete data (Chil\textasciiacute es and Delfiner, 1999). Firstly, data-locations are typically assumed as being uniformly representative of the observation region. Menezes et al (2008) shows that the impact of the clustered data on the variogram estimation is not negligible and proposes a kernel estimator for this type of data. Secondly, preferential sampling arises when the process that determines the data-locations and the process being modelled are stochastically dependent. Diggle et al (2008) proposes a model-based approach to deal with this problem. Here, we intend to emphasize the difference between these two potential problems of sampling design.},
+  file = {../../Zotero/storage/3AMH49NA/Menezes - Clustering and preferential sampling, two distinct.pdf},
+  keywords = {⛔ No DOI found},
+  language = {en}
+}
+% == BibTeX quality report for Menezes2009:
+% ? Unsure about the formatting of the booktitle
+
+@article{PaciEtAl2020,
+  ids = {PaciEtAl,PaciEtAl2020a},
+  title = {Spatial Hedonic Modelling Adjusted for Preferential Sampling},
+  author = {Paci, Lucia and Gelfand, Alan E. and Beamonte, {and} Mar{\'i}a Asunci{\'o}n and Gargallo, Pilar and Salvador, Manuel},
+  year = {2020},
+  month = jan,
+  volume = {183},
+  pages = {169--192},
+  publisher = {{John Wiley \& Sons, Ltd}},
+  issn = {1467-985X},
+  doi = {10/gg5gnq},
+  abstract = {Hedonic models are widely used to predict selling prices of properties. Originally, they were proposed as simple spatial regressions, i.e. a spatially referenced response regressed on spatially refer...},
+  file = {../../Dropbox/literature/PaciEtAl2020.pdf},
+  journal = {J. R. Stat. Soc. Ser. A Stat. Soc.},
+  language = {en},
+  number = {1}
+}
+% == BibTeX quality report for PaciEtAl2020:
+% ? Possibly abbreviated journal title J. R. Stat. Soc. Ser. A Stat. Soc.
+
 @article{PatiEtAl2011,
   title = {Bayesian Geostatistical Modelling with Informative Sampling Locations},
   author = {Pati, D. and Reich, B. J. and Dunson, D. B.},
@@ -319,6 +419,24 @@
 }
 % == BibTeX quality report for ThorsonEtAl2017:
 % ? Possibly abbreviated journal title Can. J. Fish. Aquat. Sci.
+
+@article{ThorsonEtAl2020,
+  title = {The Development of Spatio-Temporal Models of Fishery Catch-per-Unit-Effort Data to Derive Indices of Relative Abundance},
+  author = {Thorson, James T. and Maunder, Mark N. and Punt, Andr{\'e} E},
+  year = {2020},
+  month = oct,
+  volume = {230},
+  pages = {105611},
+  publisher = {{Elsevier}},
+  issn = {0165-7836},
+  doi = {10/gg2bx4},
+  abstract = {Spatio-temporal models are increasingly used to develop indices of population abundance from fishery-dependent and \textendash independent data. Developments in spatio-temporal index standardization were discussed at a workshop hosted by The Center for the Advancement of Population Assessment Methodology (CAPAM) titled ``Development and application of spatio-temporal models to derive indices of relative abundance'' (La Jolla, CA, USA; Feb. 26-March 2, 2018). This special issue includes ten submissions that highlight potential benefits arising from spatio-temporal index standardization including: (1) improved prediction for areas with little-to-no data; (2) capacity to weight densities by area to account for sampling rates that vary spatially; (3) calculation of the composition (e.g. age or length) of the indices and to weight predictions by catch to inform the composition of fishery removals, (4) estimation of distribution shifts and range expansion/contraction; and (5) capacity to combine data sources. The articles in this Special Issue highlight the need for continued development and testing for spatio-temporal index standardization methods, so that the relative strengths and weaknesses of different approaches are fully understood. The articles also identify topics that warrant further research including improved model diagnostics, accounting for biased rates of sampling (``preferential sampling''), and improvements in computational efficiency.},
+  file = {../../Dropbox/literature/ThorsonEtAl2020.pdf},
+  journal = {Fish. Res.},
+  language = {en}
+}
+% == BibTeX quality report for ThorsonEtAl2020:
+% ? Possibly abbreviated journal title Fish. Res.
 
 @article{WatsonEtAl2018,
   title = {A General Theory for Preferential Sampling in Environmental Networks},
