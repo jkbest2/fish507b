@@ -299,3 +299,8 @@ TSWLatexianTemp*
 
 # End of https://www.toptal.com/developers/gitignore/api/:R,LaTeX,Julia:
 n
+/Manifest.toml
+/figs/
+*.docx
+*.html
+*.pdf
